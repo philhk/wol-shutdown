@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "wol-shutdown",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "npm run build && node dist/index",
+    "build": "tsc",
+    "build:exe": "npm run build && pkg . -d"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "pkg": "^5.8.1"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64",
+      "node18-win-x86"
+    ],
+    "outputPath": "dist"
+  },
+  "license": "MIT"
+}
