@@ -10,7 +10,16 @@ Wol-Shutdown is a Windows application that listens for specific UDP packets and 
 3. To initiate a shutdown remotely, send a Wake-on-LAN packet to the machine running the application.
    You can use any Wake-on-LAN tool or app that supports sending Wake-on-LAN packets. For example, you can use Wake-on-LAN apps available for Android devices from the Google Play Store.
 
-   **Note:** Ensure that the machine running the application supports Wake-on-LAN and is properly configured to respond to Wake-on-LAN packets.
+   **Note:**
+   Ensure that the machine running the application supports Wake-on-LAN and is properly configured to respond to Wake-on-LAN packets. Additionally, if you move the executable files (`*.exe`), please be aware that you will need to execute the `create_startup_task.bat` file again to ensure proper functionality of Wol-Shutdown.
+
+## Managing the Startup Task
+
+To ensure that Wol-Shutdown runs automatically before login, you need to utilize the provided batch files that are located in the latest release. Both the `create_startup_task.bat` and `delete_startup_task.bat` files should be kept in the same folder as the executable files.
+
+To create the startup task for Wol-Shutdown, simply start the `create_startup_task.bat` file. This will create the necessary task in the Windows Task Scheduler.
+
+If you wish to remove the startup task, run the `delete_startup_task.bat` file. This will remove the task from the Windows Task Scheduler.
 
 ## Configuration
 
