@@ -4,8 +4,8 @@ Wol-Shutdown is a Windows application that listens for specific UDP packets and 
 
 ## Usage
 
-1. Download the appropriate executable for your system architecture from the [Releases](https://github.com/philhk/wol-shutdown/releases) tab.
-2. Run the executable by double-clicking on it.
+1. Download the zip file from the [Releases](https://github.com/philhk/wol-shutdown/releases) tab.
+2. Run the appropriate executable for your system architecture by double-clicking on it.
    The application will start listening for specific UDP packets on the predefined ports.
 3. To initiate a shutdown remotely, send a Wake-on-LAN packet to the machine running the application.
    You can use any Wake-on-LAN tool or app that supports sending Wake-on-LAN packets. For example, you can use Wake-on-LAN apps available for Android devices from the Google Play Store.
